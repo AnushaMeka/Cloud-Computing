@@ -1,0 +1,75 @@
+    1  cd opencv
+    2  \rm -rf build/
+    3  mkdir bui
+    4  \rm -rf bui/
+    5  mkdir build
+    6  cd build/
+    7  sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
+    8  \rm -rf bui/history
+    9  history
+   10  1. cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+   11  cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+   12  cd
+   13  pip install numpy
+   14  sudo apt-get install -y python-dev python3-dev
+   15  pip install numpy
+   16  sudo python3 get-pip.py
+   17  wget https://bootstrap.pypa.io/get-pip.py
+   18  sudo python3 get-pip.py
+   19  sudo pip3 install virtualenv virtualenvwrapper
+   20  vi ~/.bashrc
+   21  source ~/.bashrc
+   22  vi ~/.bashrc
+   23  source ~/.bashrc
+   24  sudo apt-get install python3.4-dev
+   25  pip install numpy
+   26  sudo rm -rf ~/.cache/pip/
+   27  pip install numpy
+   28  pip install numpy --user
+   29  cd opencv
+   30  \rm -rf build
+   31  mkdir build
+   32  cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+   33  cd build/
+   34  cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+   35  cd ..
+   36  \rm -rf build
+   37  mkdir build
+   38  cd build/
+   39  cd
+   40  sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+   41  sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
+   42  sudo apt-get install libgtk2.0-dev
+   43  sudo apt-get install libatlas-base-dev gfortran
+   44  cd -
+   45  cd ..
+   46  ls
+   47  \rm -rf build
+   48  mkdir build
+   49  cd build/
+   50  cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+   51  cd ..
+   52  \rm -rf build
+   53  cd build/
+   54  mkdir build
+   55  cd..
+   56  cd ..
+   57  cd opencv_contrib/
+   58  git checkout 3.4.0
+   59  cd ../opencv/build/
+   60  cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+   61  cd ../..
+   62  git clone  https://github.com/opencv/opencv_extra
+   63  cd opencv_extra/
+   64  git checkout 3.4.0
+   65  cd ../
+   66  cd opencv
+   67  cd build
+   68  export OPENCV_TEST_DATA_PATH=../../opencv_extra/testdata
+   69  make -j4 2>&1 |tee /home/utsa/build_result_3.4.0.txt
+   70  sudo make install
+   71  sudo ldconfig
+   72  ./bin/opencv_test_core 2>&1 |tee /home/utsa/testing_output.txt
+   73  cd
+   74  ls
+   75  history > ~/current_history.log
